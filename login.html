@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="JS/jquery-3.4.0.min.js"></script>
+    <link href="Kendo/styles/kendo.common.min.css" rel="stylesheet"/>
+    <link href="Kendo/styles/kendo.material.min.css" rel="stylesheet"/>
+    <link href="Kendo/styles/kendo.rtl.min.css" rel="stylesheet"/>
+    <script src="Kendo/js/kendo.all.min.js"></script>
+    <link href="Styles/Main.css" rel="stylesheet"/>
+    <link href="Styles/newItem.css" rel="stylesheet"/>
+    <script src="JS/newItem.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large topNav">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+           href="javascript:void(0)" onclick="w3_open();"><i class="fa fa-bars"></i></a>
+        <a href="Main.html" class="w3-bar-item w3-button">صفحه اصلی</a>
+        <a href="signUp.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ثبت نام</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">درباره ما</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">تماس با ما</a>
+    </div>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close();" style="cursor:pointer" title="close side menu"
+     id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 200 pixels when the sidebar is visible -->
+<div class="container">
+    <div class="w3-main">
+
+        <!-- START MAIN -->
+        <div style="margin-top:80px;margin-bottom:50px;margin-right:50px;margin-left:30px;" class="row">
+            <div class="box k-rtl" style="width:100%;padding:20px;">
+                <div class="row">
+                    <div class="col-12" style="width:100%;text-align:right;">
+                        <p>
+                            نام کاربری یا ایمیل
+                        </p>
+                        <input type="text" class="k-textbox" style="width: 100%;"/>
+                    </div>
+
+                    <div class="col-12" style="width:100%;text-align:right;">
+                        <p>
+                            رمز عبور
+                        </p>
+                        <input type="password" class="k-textbox" style="width: 100%;"/>
+                    </div>
+
+                </div>
+                <div class="w-100" style="text-align: center;margin-top: 20px">
+                    <button type="button" class="btn btn-success w-50" style="text-align: center">
+                        ثبت نام
+                    </button>
+                </div>
+                <div class="w-100" style="text-align: center;margin-top: 20px">
+                    <button type="button" class="btn btn-danger w-50" style="text-align: center">
+                        ثبت نام با حساب گوگل
+                    </button>
+                </div>
+                <div class="w-100" style="text-align: center;margin-top: 5px">
+                    <a href="#" class="w-50" style="text-align: center;color: black">
+                        <small>رمز عبور خود را فراموش نموده اید</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
